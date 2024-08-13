@@ -1,0 +1,26 @@
+.desktop-only {
+    display: none;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.items-center {
+    align-items: center;
+}
+
+@media (width >= 80em) {
+    .desktop-only {
+        display: initial;
+    }
+} 
+

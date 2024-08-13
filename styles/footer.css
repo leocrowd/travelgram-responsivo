@@ -1,0 +1,36 @@
+footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 24px;
+    gap: 16px;
+    justify-items: center;
+    font: 14px/150% var(--font-family);
+}
+
+footer span:nth-child(1) {
+    grid-column: 1 / -1; 
+    justify-self: center; 
+    align-self: center;
+}
+
+footer span:nth-child(2) {
+    grid-row: 2; 
+    
+}
+
+footer span:nth-child(3) {
+    grid-row: 2; 
+    
+}
+
+@media (width >= 80em) {
+    footer span:nth-child(1) {
+        margin-right: auto;
+    }
+
+    footer {
+        display: flex;
+        gap: 24px;
+    }
+}
